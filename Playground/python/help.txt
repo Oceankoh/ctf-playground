@@ -1,0 +1,11 @@
+
+To install python version
+pyenv install <version>
+pyenv global <version> || pyenv local <version> (for local directory)
+
+For virtual environment
+pyenv virtualenv <python version> <env name> 
+pyenv local <env name> 
+
+To run the file
+python <file name> 

