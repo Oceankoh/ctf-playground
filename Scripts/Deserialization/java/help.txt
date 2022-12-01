@@ -1,0 +1,7 @@
+# Usage
+
+`java -jar ysoserial-all.jar <payload> <command>`
+
+# Example
+
+`java -jar ysoserial.jar CommonsCollections1 calc.exe`
