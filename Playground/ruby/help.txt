@@ -1,0 +1,12 @@
+To switch versions of ruby
+
+```
+sudo snap switch ruby --channel=2.3/stable
+sudo snap refresh
+```
+
+To run file
+
+```
+ruby <filename>
+```
